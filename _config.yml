@@ -1,7 +1,7 @@
 # Site settings
 title: Quoc Tin Phan's personal page
-description: A simple Jekyll blog theme developed by Mateus Medeiros
-url: "http://mateussmedeiros.github.io/blade-theme/" # the base hostname & protocol for your site, e.g. http://example.com
+description: This is personal website of Quoc Tin Phan
+url: "http://quoctin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author:
