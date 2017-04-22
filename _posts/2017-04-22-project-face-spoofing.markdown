@@ -2,7 +2,7 @@
 layout: post
 title:  "Face spoofing detection"
 date:   2017-04-20 16:00 -0200
-description: ABC
+description: This project aims at developing a countermeasure of face spoofing attacks
 permalink: /face_spoofing_detection/
 ---
 ## Summarization
