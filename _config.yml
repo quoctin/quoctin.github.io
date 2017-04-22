@@ -6,7 +6,7 @@ url: "http://quoctin.github.io" # the base hostname & protocol for your site, e.
 # Author settings
 author:
   name     : Quoc Tin Phan
-  bio      : I am the second-year PhD student in the ICT Doctoral School, University of Trento. My research interest is multimedia security. I am passionate in learning convex optimization techniques and machine learning.
+  bio      : My research interest is multimedia forensics, especially forensic investigations in blind scenarios. I am also passionate in studying sparse coding and machine learning.
   email    : quoctin.phan@unitn.it
   twitter  :
 
