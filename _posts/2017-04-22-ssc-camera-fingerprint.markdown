@@ -26,4 +26,4 @@ permalink: /ssc-camera-fingerprint/
 </p>
 
 ## References
-  1. **Quoc-Tin Phan**, Giulia Boato, and Francesco G. B. De Natale, *Image Clustering by Source Camera via Sparse Representation,* (to be appeared in ICMR workshop 2017)
+  1. **Quoc-Tin Phan**, Giulia Boato, and Francesco G. B. De Natale, *Image Clustering by Source Camera via Sparse Representation,* [[PDF](/files/MFSec2017.pdf)]
