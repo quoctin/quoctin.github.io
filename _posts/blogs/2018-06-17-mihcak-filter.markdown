@@ -33,13 +33,20 @@ The property ($\ref{2}$) allows to compute $a_k = \langle f(t), \tilde{\Phi}_k(t
 </p>
 
 <p>
-  In 2D wavelet decomposition, we have two kinds of basis functions $\Phi(x,y)$ and $\Psi(x,y)$ corresponding to <i>scaling</i> and <i>wavelet</i> functions. $\Phi(x,y)$ is subscripted by $(j,m,n)$ where $j$ tells the <i>scale</i> of frequency, and $(m,n)$ is the 2D subscription of a particular function. There are three different sets of wavelet functions $\Psi^{H}(x,y), \Psi^{V}(x,y), \Psi^{D}(x,y)$, each of them is similarly subscripted by $(j,m,n)$.
+  In 2D wavelet decomposition, we have two kinds of basis functions $\Phi(x,y)$ and $\Psi(x,y)$ corresponding to <i>scaling</i> and <i>wavelet</i> functions. Scaling function $\Phi(x,y)$ plays the role of a low-pass filter $h[m,n]$, while wavelet function $\Psi(x,y)$ corresponds to a high-pass filter $g[m,n]$. There is a tied relation between the set $\{\Phi(x,y), \Psi(x,y)\}$ and $\{g[m,n], h[m,n]\}$. Instead of computing the transform by using $\Phi(x,y)$ and $\Psi(x,y)$, the same result can be obtained by resorting to filtering process with $h[m,n]$ and $g[m,n]$.
 </p>
 
 <p>
-  Suppose the basis functions are ready, the image $I$ is decomposed into <b>four</b> bands for each decomposition level: <b>LL, HL, LH, HH </b>. The band <b>LL</b> contains low frequency components of the image, while <b>HL, LH, HH</b> represent variations along $x$-axis, $y$-axis, and diagonal. One can decide to decompose $I$ with more than one level, where the subsequent level is performed on the current <b>LL</b> band instead of $I$. After one decomposition level, the resolution is halved to haft.
+  Suppose the basis functions are ready, the image $I$ is decomposed into <b>four</b> bands for each decomposition level: <b>LL, HL, LH, HH </b> (<b>L</b>: low-pass, <b>H</b>: high-pass). The band <b>LL</b> contains low frequency components of the image, while <b>HL, LH, HH</b> represent variations along $x$-axis, $y$-axis, and diagonal. One can decide to decompose $I$ with more than one level, where the subsequent level is performed on the current <b>LL</b> band instead of $I$. After one decomposition level, the resolution is halved to haft.
 </p>
 
 <p>
   In the next section, we perform decomposition based on <i>Daubechies</i> wavelets which is a particular set of basis functions $\Phi(x,y)$ and $\Psi(x,y)$ commonly used in practice, up to 4 decomposition levels.
+</p>
+
+## References
+<p>
+  <ol>
+    <li>Chun-Lin, Liu, <i>A Tutorial of the Wavelet Transform</i>. 2010.</li>.
+  </ol>
 </p>
