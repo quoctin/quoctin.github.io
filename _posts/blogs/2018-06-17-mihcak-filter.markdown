@@ -27,7 +27,7 @@ $$f(t) = \sum_{k=1}^N a_k \Phi_k(t), \quad k \; \text{is the integer index} \tag
 
 If the set of $\{\Phi_k\}$ is carefully chosen, there exist another set of $\{\tilde{\Phi}_k\}$ such that they are <b>orthonormal</b>:
 
-$$\langle \Phi_i(t), \tilde{\Phi}_j(t)\rangle = \int \Phi_i(t) \tilde{\Phi}^*_j(t) dt = \delta_{ij} \tag{2} \label{2}$$
+$$\langle \Phi_i(t), \tilde{\Phi}_j(t)\rangle = \begin{cases} \int \Phi_i(t) \tilde{\Phi}^*_j(t) dt = \delta_{ij} \quad if i=j \\ 0 if i\neqj \end{cases} \tag{2} \label{2}$$
 where $^*$ is the complex conjugate and $\delta_{ij}$  is the unit function.
 The property ($\ref{2}$) allows to compute $a_k = \langle f(t), \tilde{\Phi}_k(t) \rangle$ as the transform, and (\ref{1}) as the inverse transform.
 </p>
