@@ -41,5 +41,5 @@ The property ($\ref{2}$) allows to compute $a_k = \langle f(t), \tilde{\Phi}_k(t
 </p>
 
 <p>
-  In the next section, we perform decomposition based on <i>Daubechies</i> wavelets which is the set of basis functions $\Phi(x,y)$ and $\Psi(x,y)$, up to 4 decomposition levels.
+  In the next section, we perform decomposition based on <i>Daubechies</i> wavelets which is a particular set of basis functions $\Phi(x,y)$ and $\Psi(x,y)$ commonly used in practice, up to 4 decomposition levels.
 </p>
