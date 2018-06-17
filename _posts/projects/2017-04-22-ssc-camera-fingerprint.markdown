@@ -4,6 +4,8 @@ title:  "Camera Fingerprint Clustering"
 date:   2017-04-20 16:00 -0200
 description: This project aims at developing unsupervised techniques to cluster images by their acquisition device
 permalink: /ssc-camera-fingerprint/
+category: "project"
+usemathjax: true
 ---
 
 ## Summarization
@@ -22,7 +24,7 @@ permalink: /ssc-camera-fingerprint/
 <p align="middle">Figure 1. Sparse representation model of camera fingerprints.</p>
 
 <p>
-  We show that solving \(\ell_1\)--regularized least squares can recover sparse representations of data.
+  We show that solving $\ell_1-$ regularized least squares can recover sparse representations of data.
 </p>
 
 ## References

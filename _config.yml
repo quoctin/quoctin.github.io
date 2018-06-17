@@ -6,15 +6,22 @@ url: "http://quoctin.github.io" # the base hostname & protocol for your site, e.
 # Author settings
 author:
   name     : Quoc Tin Phan
-  bio      : I am Quoc Tin Phan, the second-year PhD student of the University of Trento, Italy. My research interest is multimedia forensics.
+  bio      : I am Quoc Tin Phan, the 3rd-year PhD student of the University of Trento, Italy. My research interest is multimedia forensics and applied machine learning.
   email    : quoctin.phan@unitn.it
   twitter  :
 
 # Build settings
 permalink: /:title/
 markdown: kramdown
-paginate: 5
-paginate_path: "/projects/page/:num"
+# paginate: 5
+# paginate_path: "/projects/page/:num"
+paginate_multiple:
+  - paginate: 5
+    paginate_path: "/blogs/page:num/"
+    sub_dir: "/blogs"
+  - paginate: 5
+    paginate_path: "/projects/page:num/"
+    sub_dir: "/projects"
 
 gems:
   - jekyll-feed
