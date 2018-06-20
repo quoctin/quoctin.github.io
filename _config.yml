@@ -13,15 +13,15 @@ author:
 # Build settings
 permalink: /:title/
 markdown: kramdown
-# paginate: 5
-# paginate_path: "/projects/page/:num"
-paginate_multiple:
-  - paginate: 5
-    paginate_path: "/blogs/page:num/"
-    sub_dir: "/blogs"
-  - paginate: 5
-    paginate_path: "/projects/page:num/"
-    sub_dir: "/projects"
+paginate: 5
+paginate_path: "/blogs/page/:num"
+# paginate_multiple:
+#   - paginate: 5
+#     paginate_path: "/blogs/page:num/"
+#     sub_dir: "/blogs"
+#   - paginate: 5
+#     paginate_path: "/projects/page:num/"
+#     sub_dir: "/projects"
 
 gems:
   - jekyll-feed
