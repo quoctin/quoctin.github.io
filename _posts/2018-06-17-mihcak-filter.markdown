@@ -43,10 +43,6 @@ The property ($\ref{2}$) allows to compute $a_k = \langle f(t), \tilde{\Phi}_k(t
 <img src="/assets/img/mihcak_filter/lina_wavelet.png" width="500" />
 <p align="middle">Figure 1. Wavelet decomposition level 1 of lina.</p>
 
-<p align="justify">
-  In the next section, we perform decomposition based on <i>Daubechies</i> wavelets which is a particular set of basis functions $\Phi(x,y)$ and $\Psi(x,y)$ commonly used in practice, up to 4 decomposition levels.
-</p>
-
 ## Mihcak's denoising filter
 <p align="justify">
 <b>HL, LH, HH</b> account for high-frequency components including noise, thus denoising will be employed on these three bands. For most of denoising algorithms, the distributions of noise and data have to be made. Mihcak's <i>et. al.</i> made assumptions that the noise is Additive White Gaussian Noise (AWGN), and the wavelet coefficients (elements of <b>HL, LH, HH</b>) are independent and identically distributed (i.i.d) Gaussian random variables. Since wavelet coefficients is locally distributed, it is hard to assume a wavelet coefficients as global i.i.d. Therefore, Mihcak <i>et. al.</i> relax the assumption so that wavelet coefficients are <i>local i.i.d</i>. This assumption is known as <i>spatial adaptivity</i>, and thus Mihcak's filter is capable to adapt itself to different image regions.
@@ -147,8 +143,11 @@ $$ \hat{x}[k] = \frac{\hat{\sigma}[k]^2}{\hat{\sigma}[k]^2 + \sigma_n^2} y[k] $$
 </p>
 
 <p align="justify">
-Once all wavelet coefficients $\hat{x}[k]$ of <b>LH,HL,HH</b> are estimated, we can apply inverse wavelet transform to obtain the clean image.
+Once all wavelet coefficients $\hat{x}[k]$ of <b>LH,HL,HH</b> are estimated, we can apply inverse wavelet transform to obtain the clean image. Please refer to Figure 3 for a demo, where Mihcak filter is applied on the first decomposition level of Lena image.
 </p>
+
+<img src="/assets/img/mihcak_filter/lena_example.png" width="1000" />
+<p align="middle">Figure 3. Lena example.</p>
 
 ## References
 <p align="justify">
