@@ -143,11 +143,11 @@ $$ \hat{x}[k] = \frac{\hat{\sigma}[k]^2}{\hat{\sigma}[k]^2 + \sigma_n^2} y[k] $$
 </p>
 
 <p align="justify">
-Once all wavelet coefficients $\hat{x}[k]$ of <b>LH,HL,HH</b> are estimated, we can apply inverse wavelet transform to obtain the clean image. Please refer to Figure 3 for a demo, where Mihcak filter is applied on the first decomposition level of Lena image.
+Once all wavelet coefficients $\hat{x}[k]$ of <b>LH,HL,HH</b> are estimated, we can apply inverse wavelet transform to obtain the clean image. Please refer to Figure 4 for an illustration, where Mihcak filter is applied on the first decomposition level of Lena image.
 </p>
 
 <img src="/assets/img/mihcak_filter/lena_example.png" width="800" />
-<p align="middle">Figure 3. Lena example.</p>
+<p align="middle">Figure 4. Lena example.</p>
 
 ## References
 <p align="justify">
