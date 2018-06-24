@@ -10,7 +10,7 @@ usemathjax: true
 
 ## Motivation
 <p align="justify">
-A compressible signal is generally composed by only a few principle components. Keeping only principle components and discarding redundant components is the goal of many compression algorithms. We can think of a compressible signal as the composition of many "similar structures", and there exist cheaper ways to represent them. On the contrary, noise is not compressible as it doesn't contain "random structures".
+A compressible signal is generally composed by only a few principle components. Keeping only principle components and discarding redundant components is the goal of many compression algorithms. We can think of a compressible signal as the composition of many "similar structures", and there exist cheaper ways to represent them. On the contrary, noise is not compressible as it contain only "random structures".
 </p>
 <p align="justify">
 The target of this post is not about compression, but about a denoising algorithm for 2D images as this algorithm shares the same motivation as compression. Both of them aim to identifying random structures in a signal and attempt to remove them.
