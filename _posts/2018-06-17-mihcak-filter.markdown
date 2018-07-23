@@ -10,7 +10,7 @@ usemathjax: true
 
 ## Motivation
 <p align="justify">
-A compressible signal is generally composed by only a few principle components. Keeping only principle components and discarding redundant components is the goal of many compression algorithms. We can think of a compressible signal as the composition of many "similar structures", and there exist cheaper ways to represent them. On the contrary, noise is not compressible as it contain only "random structures".
+A compressible signal is generally composed by only a few principle components. Keeping only principle components and discarding redundant components are the goal of many compression algorithms. We can think of a compressible signal as the composition of many "similar structures", and there exist cheaper ways to represent them. On the contrary, noise is not compressible as it contain only "random structures".
 </p>
 <p align="justify">
 The target of this post is not about compression, but about a denoising algorithm for 2D images as this algorithm shares the same motivation as compression. Both of them aim to identifying random structures in a signal and attempt to remove them.
@@ -45,7 +45,7 @@ The property ($\ref{2}$) allows to compute $a_k = \langle f(t), \tilde{\Phi}_k(t
 
 ## Mihcak's denoising filter
 <p align="justify">
-<b>HL, LH, HH</b> account for high-frequency components including noise, thus denoising will be employed on these three bands. For most of denoising algorithms, the distributions of noise and data have to be made. Mihcak's <i>et. al.</i> made assumptions that the noise is Additive White Gaussian Noise (AWGN), and the wavelet coefficients (elements of <b>HL, LH, HH</b>) are independent and identically distributed (i.i.d) Gaussian random variables. Since wavelet coefficients is locally distributed, it is hard to assume a wavelet coefficients as global i.i.d. Therefore, Mihcak <i>et. al.</i> relax the assumption so that wavelet coefficients are <i>local i.i.d</i>. This assumption is known as <i>spatial adaptivity</i>, and thus Mihcak's filter is capable to adapt itself to different image regions.
+<b>HL, LH, HH</b> account for high-frequency components including noise, thus denoising will be employed on these three bands. For most of denoising algorithms, the distributions of noise and data have to be made. Mihcak's <i>et al.</i> made assumptions that the noise is Additive White Gaussian Noise (AWGN), and the wavelet coefficients (elements of <b>HL, LH, HH</b>) are independent and identically distributed (i.i.d) Gaussian random variables. Since wavelet coefficients is locally distributed, it is hard to assume a wavelet coefficients as global i.i.d. Therefore, Mihcak <i>et al.</i> relax the assumption so that wavelet coefficients are <i>local i.i.d</i>. With this assumption, Mihcak's filter is designed so that it is capable to adapt itself to different image regions (<i>spatial adaptivity</i>).
 </p>
 
 <img src="/assets/img/mihcak_filter/statistical_model.png" width="500" />
